@@ -19,11 +19,18 @@
 <body>
     <div class="container-fluid">
         
+        <div>
+            @include('segments.home.topnav')    
+        </div>
+
         @yield('content')
+
+        <div class="text-center">
+            <h1>This is footer</h1>
+        </div>
 
         @yield('cus_js')
         
     </div>
-
 </body>
 </html>
