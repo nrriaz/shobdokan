@@ -1,0 +1,52 @@
+.front-cover{
+	width: 100%;
+	height: 300px;
+}
+.front-profile{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.front-profile img{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: auto;
+}
+.front{
+	position: relative;																																																					
+}
+.front-desc{
+	display: block;
+}
+.front-desc *{
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+.shop-front-tab ul li{
+	display: inline-block;
+	padding:10px;
+	border-right: 1px solid silver;
+	cursor: pointer;
+}
+.shop-front-tab ul li:last-child{
+	border-right: none;
+}
+.shop-front-tab ul{
+	display: inline-block;
+	padding-left: 0px;
+	list-style-type: none;
+	border:2px solid silver;
+}
+.shop-front-tab{
+	text-align: center;
+}
+.active-tab{
+	color: white;
+	background-color: black;
+	cursor: default;
+}
+.active-tab:hover{
+	cursor: default;
+}

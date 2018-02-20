@@ -10,6 +10,7 @@
     <script type="text/javascript" src="\bootstrap\bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="\bootstrap\bootstrap.min.css">
     <script type="text/javascript" src="\vue\vue.js"></script>
+    <script type="text/javascript" src="\fa\fa_all.js"></script>
     
     <title>{{ config('app.name', 'Laravel') }}</title>
 

@@ -12,4 +12,5 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/home/all_category.js', 'public/js/home')
+	.js('resources/assets/js/shop/shop_front.js','public/js/shop')
    .sass('resources/assets/sass/app.scss', 'public/css');

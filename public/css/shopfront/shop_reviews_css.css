@@ -1,0 +1,26 @@
+.progress{
+	padding-left: 0px;
+	margin-left:0px;
+	display: block;
+}
+.progress-bar{
+	position: absolute;
+	top: 15%;
+}
+.review-summary div div{
+	text-align: right;
+}
+.stars {
+	color: red;
+	font-size:7pt;
+}
+.new-review div{
+	background-color: green;
+	color:white;
+	padding: 5px;
+	border-radius: .2cm;
+	text-align: center;
+}
+.new-review{
+	margin-bottom: 25px;
+}
