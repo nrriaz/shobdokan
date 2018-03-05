@@ -1,0 +1,84 @@
+.shop_owner_about{
+	width: 85%;
+	height: auto;
+	display: flex;
+	margin: auto;
+}
+.shop_owner_about img{
+	width: 90%;
+	height: 90%;
+	border-radius: 4cm;
+}
+#first_div h6{
+	font-style: italic;
+}
+.about_owner{
+	padding: 10px;
+	text-indent: 10%;
+	border:2px solid grey;
+	border-radius: 0 1cm 1cm 1cm;
+	background-color: #e3e3e3;
+}
+.about_owner p::first-letter{
+	font-size: 200%;
+}
+.shop_about_photo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.shop_about_photo div{
+	width: 300px;
+	height: 300px;
+}
+.shop_about_photo div img{
+	width: 80%;
+	height: 80%;
+	display: flex;
+	margin: auto;
+}
+.achievement h5{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	display: block;
+	width: 70%;
+	border-radius: .2cm;
+}
+.achievement h3{
+	display: block;
+	width: 100%;
+}
+.shop_bio p,.achievement h5{
+	background-color: #e3e3e3; 
+}
+.shop_bio p{
+	padding: 10px;
+	border-radius: .5cm;
+}
+.shop_bio h3,.achievement h3{
+	font-weight: bolder;
+	text-align: center;
+}
+.contacts div{
+	display: inline-block;
+	line-height: 30px;
+	padding: 10px;
+}
+.contacts{
+	text-align: center;
+}
+.contacts div:first-child{
+	font-size: 16pt;
+}
+.contacts div:not(:first-child):hover{
+	background-color: #e3e3e3;
+	color:blackk;
+	cursor: pointer;
+}
+.open_time div{
+	display: inline-block;
+}
+.open_time{
+	text-align: center;
+}

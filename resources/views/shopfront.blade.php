@@ -3,6 +3,7 @@
 @section('cus_css')
 	<link rel="stylesheet" type="text/css" href="\css\shopfront\shopfront_common.css">
 	<link rel="stylesheet" type="text/css" href="\css\shopfront\shop_reviews_css.css">
+	<link rel="stylesheet" type="text/css" href="\css\shopfront\shop_about.css">
 @stop
 
 @section('cus_js')
@@ -37,6 +38,9 @@
 		</div>
 		<div v-if="tabs[1].isActive">
 			@include('segments.shop.shop_reviews')
+		</div>
+		<div v-if="tabs[5].isActive">
+			@include('segments.shop.shop_about')
 		</div>
 	</div>
 @stop
