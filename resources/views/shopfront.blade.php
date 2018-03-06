@@ -39,6 +39,9 @@
 		<div v-if="tabs[1].isActive">
 			@include('segments.shop.shop_reviews')
 		</div>
+		<div v-if="tabs[3].isActive">
+			@include('segments.shop.shop_photos')
+		</div>
 		<div v-if="tabs[5].isActive">
 			@include('segments.shop.shop_about')
 		</div>

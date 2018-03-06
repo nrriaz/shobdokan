@@ -39,6 +39,12 @@
 			</div>
 		</div>
 		<hr>
+		<div class="social">
+			<div><i class="fab fa-facebook-f"></i> NRRiaz</div>
+			<div><i class="fab fa-twitter"></i> iNRRiaz</div>
+			<div><i class="fab fa-instagram"></i> nrriaz</div>
+		</div>
+		<hr>
 		<div class="shop_bio">
 			<h3><i class="fa fa-shopping-bag" aria-hidden="true"></i> About the shop</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
