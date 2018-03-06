@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="\css\shopfront\shopfront_common.css">
 	<link rel="stylesheet" type="text/css" href="\css\shopfront\shop_reviews_css.css">
 	<link rel="stylesheet" type="text/css" href="\css\shopfront\shop_about.css">
+	<link rel="stylesheet" type="text/css" href="\css\shopfront\shop_photos_css.css">
 @stop
 
 @section('cus_js')
