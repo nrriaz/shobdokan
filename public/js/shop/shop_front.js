@@ -47320,7 +47320,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Product_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Product_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_UserReview_vue__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_UserReview_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_UserReview_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhotoThumb_vue__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhotoThumb_vue__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhotoThumb_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_PhotoThumb_vue__);
 __webpack_require__(14);
 
@@ -47331,25 +47331,23 @@ window.Vue = __webpack_require__(37);
 
 
 
-var shop_category = new Vue({
-	el: '#shop_category',
+var shop = new Vue({
+	el: "#shop",
 	components: {
 		'shop-category': __WEBPACK_IMPORTED_MODULE_0__components_ShopCategory_vue___default.a,
-		'product': __WEBPACK_IMPORTED_MODULE_1__components_Product_vue___default.a
-	}
-});
-
-var shop_reviews = new Vue({
-	el: '#shop_reviews',
-	components: {
-		'user-review': __WEBPACK_IMPORTED_MODULE_2__components_UserReview_vue___default.a
-	}
-});
-
-var shop_photos = new Vue({
-	el: '#shop_photos',
-	components: {
+		'product': __WEBPACK_IMPORTED_MODULE_1__components_Product_vue___default.a,
+		'user-review': __WEBPACK_IMPORTED_MODULE_2__components_UserReview_vue___default.a,
 		'photo-thumb': __WEBPACK_IMPORTED_MODULE_3__components_PhotoThumb_vue___default.a
+	},
+	data: {
+		tabs: [{ 'tab_id': 1, 'tab_name': 'Products', 'isActive': false }, { 'tab_id': 2, 'tab_name': 'Reviews', 'isActive': false }, { 'tab_id': 3, 'tab_name': 'Location', 'isActive': false }, { 'tab_id': 4, 'tab_name': 'Photos', 'isActive': true }, { 'tab_id': 5, 'tab_name': 'Videos', 'isActive': false }, { 'tab_id': 6, 'tab_name': 'About', 'isActive': false }]
+	},
+	methods: {
+		showHide: function showHide(x) {
+			for (var i = this.tabs.length - 1; i >= 0; i--) {
+				this.tabs[i].isActive = this.tabs[i].tab_id == x.id ? true : false;
+			}
+		}
 	}
 });
 
@@ -47853,22 +47851,19 @@ if (false) {
 }
 
 /***/ }),
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(75)
+  __webpack_require__(72)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(77)
+var __vue_script__ = __webpack_require__(74)
 /* template */
-var __vue_template__ = __webpack_require__(78)
+var __vue_template__ = __webpack_require__(75)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47907,13 +47902,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 75 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(76);
+var content = __webpack_require__(73);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -47933,7 +47928,7 @@ if(false) {
 }
 
 /***/ }),
-/* 76 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -47941,13 +47936,13 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.photo[data-v-11a4de3b]{\n\twidth: 200px;\n\theight: 200px;\n}\n.photo img[data-v-11a4de3b]{\n\twidth:98%;\n\theight: 98%;\n}\n.root[data-v-11a4de3b]{\n\tdisplay: inline-block;\n}\n", ""]);
+exports.push([module.i, "\n.photo[data-v-11a4de3b]{\n\twidth: 200px;\n\theight: 200px;\n\tposition: relative;\n}\n.photo img[data-v-11a4de3b]{\n\twidth:98%;\n\theight: 98%;\n\tcursor: pointer;\n}\n.root[data-v-11a4de3b]{\n\tdisplay: inline-block;\n}\n.desc[data-v-11a4de3b]{\n\tposition: absolute;\n\tleft: 0px;\n\tbottom: 3px;\n\tpadding: 3%;\n\tbackground-color: rgba(0,0,0,.5);\n\tcolor: white;\n}\n.title[data-v-11a4de3b]{\n\tfont-weight: bold;\n\tfont-size: 12pt;\n}\n.product_name[data-v-11a4de3b]{\n\tfont-size: 10pt;\n}\n.pub_date[data-v-11a4de3b]{\n\tfont-size: 8pt;\n}\nhr[data-v-11a4de3b]{\n\tmargin-top: 0px;\n\tmargin-bottom: 0px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 77 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47973,25 +47968,48 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			isDesc: false
+		};
+	},
+
+	methods: {
+		showDesc: function showDesc(event) {
+			this.isDesc = true;
+		},
+		hideDesc: function hideDesc(event) {
+			this.isDesc = false;
+		},
+		clicked: function clicked() {
+			console.log('click');
+		}
+	}
+});
 
 /***/ }),
-/* 78 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "root" }, [
-      _c("div", { staticClass: "photo" }, [
+  return _c("div", { staticClass: "root" }, [
+    _c(
+      "div",
+      {
+        staticClass: "photo",
+        on: {
+          mouseenter: _vm.showDesc,
+          mouseleave: _vm.hideDesc,
+          click: function($event) {
+            _vm.clicked()
+          }
+        }
+      },
+      [
         _c("img", {
           attrs: {
             src:
@@ -47999,27 +48017,40 @@ var staticRenderFns = [
           }
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "desc" }, [
-          _c("div", { staticClass: "title" }, [
-            _vm._v(
-              "\n\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit\n\t\t\t"
-            )
-          ]),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("div", { staticClass: "product_name" }, [
-            _vm._v("\n\t\t\t\tLorem ipsum dolor\n\t\t\t")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "pub_date" }, [
-            _vm._v("\n\t\t\t\t06th March 2018 at 3.57pm\n\t\t\t")
-          ])
-        ])
-      ])
-    ])
-  }
-]
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.isDesc,
+                expression: "isDesc"
+              }
+            ],
+            staticClass: "desc"
+          },
+          [
+            _c("div", { staticClass: "title" }, [
+              _vm._v("\n\t\t\t\tLorem ipsum dolor sit amet\n\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("div", { staticClass: "product_name" }, [
+              _vm._v("\n\t\t\t\tLorem ipsum dolor\n\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pub_date" }, [
+              _vm._v("\n\t\t\t\t06th March 2018 at 3.57pm\n\t\t\t")
+            ])
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

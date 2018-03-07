@@ -1,10 +1,10 @@
 <template>
-	<div class="root">
-		<div class="photo">
+	<div class="root" >
+		<div class="photo"   @mouseenter="showDesc" @mouseleave="hideDesc" @click="clicked()">
 			<img src="https://dummyimage.com/600x400/ff0000/000011.jpg&text=shop+new">
-			<div class="desc">
+			<div class="desc" v-show="isDesc">
 				<div class="title">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit
+					Lorem ipsum dolor sit amet
 				</div>
 				<hr>
 				<div class="product_name">
@@ -19,8 +19,23 @@
 </template>
 
 <script>
-	export default{
-
+	export default {
+		data(){
+			return {
+				isDesc:false
+			}
+		},
+		methods:{
+			showDesc(event){
+				this.isDesc=true;										
+			},
+			hideDesc(event){
+				this.isDesc=false;
+			},
+			clicked(){
+				console.log('click');
+			}
+		}
 	}
 </script>
 
@@ -28,12 +43,36 @@
 	.photo{
 		width: 200px;
 		height: 200px;
+		position: relative;
 	}
 	.photo img{
 		width:98%;
 		height: 98%;
+		cursor: pointer;
 	}
 	.root{
 		display: inline-block;
+	}
+	.desc{
+		position: absolute;
+		left: 0px;
+		bottom: 3px;
+		padding: 3%;
+		background-color: rgba(0,0,0,.5);
+		color: white;
+	}
+	.title{
+		font-weight: bold;
+		font-size: 12pt;
+	}
+	.product_name{
+		font-size: 10pt;
+	}
+	.pub_date{
+		font-size: 8pt;
+	}
+	hr{
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 </style>

@@ -9,7 +9,6 @@
 
 @section('cus_js')
 	<script type="text/javascript" src="\js\shop\shop_front.js"></script>
-	<script type="text/javascript" src="\js\shop\shop_js.js"></script>
 @stop
 
 @section('content')
