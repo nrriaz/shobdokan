@@ -1,7 +1,7 @@
 <template>
 	<div class="root" >
 		<div class="photo"   @mouseenter="showDesc" @mouseleave="hideDesc" @click="clicked()">
-			<img src="https://dummyimage.com/600x400/ff0000/000011.jpg&text=shop+new">
+			<img src="/images/samples.png">
 			<div class="desc" v-show="isDesc">
 				<div class="title">
 					Lorem ipsum dolor sit amet

@@ -1,0 +1,31 @@
+.first_div{
+	position: relative;
+}
+.total_table{
+	border-bottom: 2px double grey;
+}
+.cart,.isCon{
+	display: inline-block;
+}
+.isCon{
+	position: absolute;
+	right: 0px;
+}
+.main{
+	width: 70%;
+	margin: auto;
+}
+.prod_img img{
+	width: 100px;
+	height: 100px;
+}
+.bottom_div{
+	position: relative;
+}
+.taka,.checkout{
+	display: inline-block;
+}
+.checkout{
+	position: absolute;
+	right:0px;
+}

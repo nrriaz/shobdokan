@@ -47575,7 +47575,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.product[data-v-2f444cf0]{\n\twidth: 150px;\n\theight: 200px;\n\tmargin: 10px;\n}\n.product-thumb[data-v-2f444cf0]{\n\twidth: 100%;\n\theight: 100%;\n}\n.product-info div[data-v-2f444cf0]{\n\tdisplay: inline-block;\n}\n#rating[data-v-2f444cf0], #available[data-v-2f444cf0]{\n\tfloat: right;\n}\n.desc[data-v-2f444cf0]{\n\tdisplay: block;\n\twidth: 100%;\n}\n.thumb[data-v-2f444cf0]{\n\twidth: 100%;\n\theight: 60%;\n}\n", ""]);
+exports.push([module.i, "\n.product[data-v-2f444cf0]{\n\twidth: 150px;\n\theight: 200px;\n\tmargin: 10px;\n}\n.product-thumb[data-v-2f444cf0]{\n\twidth: 100%;\n\theight: 100%;\n}\n.product-info div[data-v-2f444cf0]{\n\tdisplay: inline-block;\n}\n#rating[data-v-2f444cf0], #available[data-v-2f444cf0]{\n\tfloat: right;\n}\n.desc[data-v-2f444cf0]{\n\tdisplay: block;\n\twidth: 100%;\n}\n.thumb[data-v-2f444cf0]{\n\tposition: relative;\n\twidth: 100%;\n\theight: 60%;\n}\n.add[data-v-2f444cf0]{\n\tposition: absolute;\n\tright: 0px;\n\tbottom: 3px;\n\tbackground-color: red;\n}\n", ""]);
 
 // exports
 
@@ -47586,6 +47586,7 @@ exports.push([module.i, "\n.product[data-v-2f444cf0]{\n\twidth: 150px;\n\theight
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -47627,21 +47628,19 @@ var staticRenderFns = [
       _c("div", { staticClass: "thumb" }, [
         _c("img", {
           staticClass: "product-thumb",
-          attrs: {
-            src:
-              "http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image",
-            alt: "placeholder+image"
-          }
-        })
+          attrs: { src: "/images/samples.png", alt: "placeholder+image" }
+        }),
+        _vm._v(" "),
+        _c("button", { staticClass: "btn btn-default add" }, [_vm._v("Add")])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "desc" }, [
         _c("div", [_vm._v("Product Name")]),
         _vm._v(" "),
         _c("div", { staticClass: "product-info" }, [
-          _c("div", { attrs: { id: "price" } }, [_vm._v("Price")]),
+          _c("div", { attrs: { id: "price" } }, [_vm._v("500tk")]),
           _vm._v(" "),
-          _c("div", { attrs: { id: "rating" } }, [_vm._v("Rating")])
+          _c("div", { attrs: { id: "rating" } }, [_vm._v("4.93")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "product-info" }, [
@@ -48010,12 +48009,7 @@ var render = function() {
         }
       },
       [
-        _c("img", {
-          attrs: {
-            src:
-              "https://dummyimage.com/600x400/ff0000/000011.jpg&text=shop+new"
-          }
-        }),
+        _c("img", { attrs: { src: "/images/samples.png" } }),
         _vm._v(" "),
         _c(
           "div",

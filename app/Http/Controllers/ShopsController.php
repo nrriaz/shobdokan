@@ -10,4 +10,8 @@ class ShopsController extends Controller
     {
     	return view('shopfront');
     }
+    public function cart()
+    {
+    	return view('cart');
+    }
 }

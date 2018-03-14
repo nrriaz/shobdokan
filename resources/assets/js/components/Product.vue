@@ -1,13 +1,14 @@
 <template>
 	<div class="product">
 		<div class="thumb">
-			<img class="product-thumb" src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+			<img class="product-thumb" src="/images/samples.png" alt="placeholder+image">
+			<button class="btn btn-default add">Add</button>
 		</div>
 		<div class="desc">
 			<div>Product Name</div>
 			<div class="product-info">
-				<div id="price">Price</div>
-				<div id="rating">Rating</div>
+				<div id="price">500tk</div>
+				<div id="rating">4.93</div>
 			</div>
 			<div class="product-info">
 				<div id="sold">Sold</div>
@@ -44,7 +45,14 @@
 		width: 100%;
 	}
 	.thumb{
+		position: relative;
 		width: 100%;
 		height: 60%;
+	}
+	.add{
+		position: absolute;
+		right: 0px;
+		bottom: 3px;
+		background-color: red;
 	}
 </style>
